@@ -13,12 +13,12 @@ window.onload = function() {
     ipigLatinBtn.onclick = pigLatinFunction;
     var malkovitchBtn = document.getElementById("btnMalko");
     malkovitchBtn.onclick = malkovitchFunction;
-}
+} 
 
 //function that will call the "modifyText()" with a timer
 function increaseSizeWithTimer(){
     if (timer === null) {
-        timer = setInterval(modifyText, 500);
+        timer = setInterval(changeSizeText, 500);
     } else {
         clearInterval(timer);
         timer = null;
