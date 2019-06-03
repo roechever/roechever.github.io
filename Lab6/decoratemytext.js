@@ -2,6 +2,8 @@
 function gogogo() {
     alert("Yay, it works!");
 }
+var timer = null; // will be used for using timer for increasing the text
+
 window.onload = function() {
     var biggerBtn = document.getElementById("btnBigger");
     biggerBtn.onclick = increaseSizeWithTimer; //changeSizeText;
