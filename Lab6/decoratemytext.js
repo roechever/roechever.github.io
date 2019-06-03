@@ -23,7 +23,7 @@ function increaseSizeWithTimer(){
         clearInterval(timer);
         timer = null;
     }
-}
+} 
 
 //Change size from textare
 function changeSizeText (){
