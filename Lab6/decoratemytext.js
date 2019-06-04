@@ -13,23 +13,23 @@ window.onload = function() {
     ipigLatinBtn.onclick = pigLatinFunction;
     var malkovitchBtn = document.getElementById("btnMalko");
     malkovitchBtn.onclick = malkovitchFunction;
-}
+} 
 
 //function that will call the "modifyText()" with a timer
 function increaseSizeWithTimer(){
     if (timer === null) {
-        timer = setInterval(modifyText, 500);
+        timer = setInterval(changeSizeText, 500);
     } else {
         clearInterval(timer);
         timer = null;
     }
-}
+} 
 
 //Change size from textare
 function changeSizeText (){
     var textArea = document.getElementById('ta');
     var currentSize = parseInt(textArea.style.fontSize) || 12; //before had 24
-    textArea.style.fontSize = (currentSize+2)+"pt";  
+    textArea.style.fontSize = (currentSize+2)+"pt";  //second part lab
 
 }
 
